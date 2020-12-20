@@ -374,6 +374,7 @@ ssl_version(u_short version) {
 		case 0x301: return "TLSv1";
 		case 0x302: return "TLSv1.1";
 		case 0x303: return "TLSv1.2";
+		case 0x304: return "TLSv1.3";
 	}
 	snprintf(hex, sizeof(hex), "0x%04hx", version);
 	return hex;
@@ -400,7 +401,7 @@ got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *packet)
 	int size_iptotal;
 	int size_tcp;
 	int size_payload;
-	
+
 #ifdef LOG_COUNTER
 	printf("%u\t", count);
 	count++;
