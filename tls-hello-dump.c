@@ -355,7 +355,7 @@ drop_privileges(char *username)
 
 
 #define SSL_MIN_GOOD_VERSION	0x002
-#define SSL_MAX_GOOD_VERSION	0x304	// let's be optimistic here!
+#define SSL_MAX_GOOD_VERSION	0x305	// let's be optimistic here!
 
 #define TLS_HANDSHAKE		22
 #define TLS_CLIENT_HELLO	1
